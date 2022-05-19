@@ -1,0 +1,13 @@
+<apex:page controller="DataTableController"> 
+    <apex:form > 
+        <apex:pageBlock title="Car List" id="car_list"> 
+            <apex:pageBlockTable value="{!CarList}" var="c"> 
+                <apex:column value="{! c.full_name__c }"/> 
+                <apex:column value="{! c.price__c }"/> 
+                <apex:column value="{! c.tax__c }"/> 
+                <apex:column value="{! c.model_year__c }"/> 
+                <apex:column value="{! c.registration_plate__c }"/> 
+            </apex:pageBlockTable> 
+        </apex:pageBlock> 
+    </apex:form> 
+</apex:page>
